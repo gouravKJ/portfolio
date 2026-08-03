@@ -1007,12 +1007,12 @@ function renderTrafficCounts(snapshot) {
   if (activeEl && activeValue != null) {
     activeEl.textContent = formatTrafficNumber(activeValue);
   }
-  if (contactVisitorEl && uniqueValue != null) {
-    const uniqueNumber = Number(uniqueValue);
-    contactVisitorEl.textContent = formatTrafficNumber(uniqueNumber);
+  if (contactVisitorEl && totalValue != null) {
+    const visitorNumber = Number(totalValue);
+    contactVisitorEl.textContent = formatTrafficNumber(visitorNumber);
     if (contactVisitorSuffixEl) {
-      const mod100 = uniqueNumber % 100;
-      const mod10 = uniqueNumber % 10;
+      const mod100 = visitorNumber % 100;
+      const mod10 = visitorNumber % 10;
       contactVisitorSuffixEl.textContent = mod100 >= 11 && mod100 <= 13 ? "th" : (mod10 === 1 ? "st" : mod10 === 2 ? "nd" : mod10 === 3 ? "rd" : "th");
     }
   }
