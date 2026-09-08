@@ -582,6 +582,82 @@
         </div>
       </div>
 
+      <!-- Work Item 4: StudyLoop -->
+      <div class="work-item reveal" data-preview="4" data-preview-img="assets/studyloop-hero.png"
+        data-github-repo="insharahn/studyloop">
+        <button class="modal-close" aria-label="Close Project">&times;</button>
+        <div class="work-header">
+          <span class="work-name">StudyLoop</span>
+          <span class="work-tech">Mistake-Driven AI Study & Spaced Repetition Platform</span>
+          <span class="work-status">Live</span>
+        </div>
+        <div class="work-details">
+          <div class="work-layout-grid">
+
+            <!-- Left Side: Full Description Text -->
+            <div class="work-desc">
+              <div class="project-section">
+                <h4>01<br>THE OVERVIEW</h4>
+                <p>Most study apps generate flashcards from your notes. StudyLoop generates them from your mistakes — tracing every wrong answer back to the actual concept you don't understand, so you spend your time fixing real gaps instead of re-reading slides you already know.</p>
+              </div>
+
+              <div class="project-section">
+                <h4>02<br>WHAT IT DOES</h4>
+                <p>An intelligent learning engine designed to pinpoint knowledge gaps and automate retention:</p>
+                <ul>
+                  <li><strong>Upload & Understand</strong> — parses lecture PDFs, extracts underlying concepts, and builds a prerequisite graph showing how topics depend on each other, visualized as an interactive concept map.</li>
+                  <li><strong>Grounded Doubt-Solving</strong> — a chat interface that answers strictly from your uploaded material with exact page citations, refusing to hallucinate when notes don't cover a topic.</li>
+                  <li><strong>Adaptive Flashcards</strong> — MCQ and cloze cards generated per concept grounded in actual course content, scheduled via FSRS spaced repetition prioritized against your exam date.</li>
+                  <li><strong>Root-Cause Diagnosis</strong> — when you miss a question, StudyLoop traces the error back through the prerequisite graph to the specific earlier concept you're actually struggling with.</li>
+                  <li><strong>Progress Tracking (Class Pulse)</strong> — a mastery dashboard with per-concept clarity scores, weak-topic breakdowns, and a downloadable session report card.</li>
+                </ul>
+              </div>
+
+              <div class="project-section">
+                <h4>03<br>KEY HIGHLIGHTS</h4>
+                <ul>
+                  <li>FastAPI (Python 3.11) backend with raw psycopg database operations</li>
+                  <li>Supabase Postgres + pgvector for vector storage and Supabase Auth & Storage integration</li>
+                  <li>Groq LLM (openai/gpt-oss-120b) integration for fast, zero-cost AI reasoning</li>
+                  <li>Local CPU-only sentence-transformers embeddings (BAAI/bge-small-en-v1.5) requiring no external embedding API</li>
+                  <li>Production deployments hosted on Railway (Backend API) and Vercel (Frontend App)</li>
+                </ul>
+              </div>
+
+              <div class="project-section">
+                <h4>04<br>TECH STACK</h4>
+                <div class="tech-tags">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Vite</span>
+                  <span class="tech-tag">FastAPI</span>
+                  <span class="tech-tag">Python 3.11</span>
+                  <span class="tech-tag">Supabase</span>
+                  <span class="tech-tag">pgvector</span>
+                  <span class="tech-tag">Groq LLM</span>
+                  <span class="tech-tag">Sentence-Transformers</span>
+                  <span class="tech-tag">FSRS Spaced Repetition</span>
+                  <span class="tech-tag">Railway</span>
+                  <span class="tech-tag">Vercel</span>
+                </div>
+              </div>
+
+              <div class="work-links" style="display: flex; gap: 1rem; align-items: center; margin-top: 2rem;">
+                <a href="https://studyloop-nu.vercel.app/" class="work-btn" target="_blank" rel="noopener"
+                  style="background: #ffffff; color: #1e1e1e; font-weight: 700;">Live Demo ↗</a>
+                <a href="https://github.com/insharahn/studyloop" class="work-btn" target="_blank"
+                  rel="noopener">Source Code</a>
+              </div>
+            </div>
+
+            <!-- Right Side: Sticky Project Image -->
+            <div class="project-hero-image-wrap">
+              <img src="assets/studyloop-hero.png" alt="StudyLoop Preview" />
+            </div>
+
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
