@@ -1,6 +1,6 @@
 /* ============================================
    PORTFOLIO — Interactions & Animations
-   Sanya Arora
+   Gourav Kumar Jaiswal
    ============================================ */
 
 /**
@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('loading');
 
 
-    const targetText = "SANYA ARORA";
+    const targetText = "GOURAV JAISWAL";
     splashText.innerHTML = ''; // Clear initial text
 
     // Create spans for each letter for a smooth staggered reveal
@@ -411,10 +411,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (heroRoleRotator) {
     const roles = [
       'Full-stack developer.',
-      'AI integration engineer.',
+      'AI/ML engineer.',
       'MERN stack builder.',
-      'REST API designer.',
-      'Product-minded engineer.'
+      'RAG systems builder.',
+      'Problem solver.'
     ];
     let roleIndex = 0;
 

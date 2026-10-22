@@ -1,5 +1,5 @@
 /* ============================================
-   PORTFOLIO — Sanya Arora
+   PORTFOLIO — Gourav Kumar Jaiswal
    ============================================ */
 
 /* Fonts loaded via <link> in HTML head for better performance (no @import delay) */
@@ -1619,10 +1619,10 @@ body.loading {
   filter: none;
 }
 
-/* Two clips, one per theme: lightthemevideo (square) in light, homepagevideo4 in
-   dark. Both are square 720x720, so the light clip needs no size or mask overrides
-   -- it inherits the base .hero-portrait-video box, crop and feather, identical to
-   the dark clip. Only the display switching below differs. */
+/* Two illustrations, one per theme: techie-boy-light in light mode and
+   techie-boy-dark in dark mode. Both are square 720x720, so the light artwork
+   needs no size or mask overrides -- it inherits the base .hero-portrait-video
+   box, crop and feather, identical to the dark artwork. */
 .hero-portrait-video--dark {
   display: none;
 }
@@ -6253,4 +6253,233 @@ body.loading {
     display: block !important;
     transform: none !important;
   }
+}
+
+
+/* ============================================
+   HERO ART — Techie boy SVG (light / dark)
+   ============================================ */
+.hero-portrait-container {
+  --hero-video-crop: 0.02;
+}
+
+.hero-portrait-art {
+  filter: none;
+}
+
+[data-theme='dark'] .hero-portrait-video--dark.hero-portrait-art {
+  /* The SVG already ships a transparent dark scene, so skip the video trick. */
+  mix-blend-mode: normal;
+}
+
+/* Two-line name keeps the full name readable without shrinking it to nothing. */
+@media (min-width: 1025px) {
+  .hero-name {
+    font-size: clamp(3.6rem, 7.6vw, 8.8rem);
+    line-height: 0.82;
+  }
+}
+
+.hero-name .name-line--last {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--text-main);
+}
+
+@media (max-width: 768px) {
+  .hero-name .name-line--last {
+    -webkit-text-stroke-width: 1.4px;
+  }
+}
+
+/* ============================================
+   EXPERIENCE & EDUCATION
+   ============================================ */
+.journey {
+  position: relative;
+  padding: clamp(4rem, 9vh, 7rem) clamp(1.25rem, 5vw, 6rem);
+  border-top: 1px solid var(--accent-border);
+}
+
+.journey-inner {
+  width: 100%;
+  max-width: min(1400px, 100%);
+  margin: 0 auto;
+}
+
+.journey-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: clamp(1.5rem, 4vw, 4rem);
+  padding-bottom: clamp(1.5rem, 4vh, 2.5rem);
+  margin-bottom: clamp(2rem, 5vh, 3.5rem);
+  border-bottom: 1px solid var(--accent-border);
+}
+
+.journey-head .works-header {
+  margin: 0.6rem 0 0;
+}
+
+.journey-intro {
+  max-width: 340px;
+  margin: 0 0 0.35rem;
+  font-family: 'Share Tech Mono', var(--font-body), monospace;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  color: var(--text-body);
+  text-align: right;
+}
+
+.journey-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.5rem, 4vw, 4rem);
+  align-items: start;
+}
+
+.journey-col-title {
+  margin: 0 0 1rem;
+  font-family: 'Share Tech Mono', var(--font-body), monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--text-faded);
+}
+
+.journey-card {
+  position: relative;
+  margin-bottom: 1rem;
+  padding: clamp(1.15rem, 2.4vw, 1.8rem);
+  border: 1px solid var(--accent-border);
+  background: transparent;
+  transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+
+.journey-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--text-main);
+}
+
+.journey-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+  font-family: 'Share Tech Mono', var(--font-body), monospace;
+  font-size: 0.62rem;
+  letter-spacing: 1.5px;
+  color: var(--text-faded);
+  text-transform: uppercase;
+}
+
+.journey-place {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.journey-card h4 {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 2.3vw, 2.1rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  color: var(--text-main);
+  text-transform: uppercase;
+}
+
+.journey-org {
+  margin: 0 0 0.85rem;
+  font-family: 'Share Tech Mono', var(--font-body), monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.4px;
+  color: var(--text-main);
+}
+
+.journey-card ul {
+  margin: 0 0 1rem;
+  padding-left: 1rem;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  line-height: 1.65;
+  color: var(--text-body);
+  letter-spacing: -0.01em;
+}
+
+.journey-card li {
+  margin-bottom: 0.45rem;
+}
+
+.journey-card li::marker {
+  color: var(--text-main);
+}
+
+.journey-detail {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--text-body);
+}
+
+.journey-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+
+.journey-card--accent {
+  border-top: 3px solid var(--text-main);
+  background: var(--accent-rgba);
+}
+
+.journey-card--accent .journey-card-top {
+  color: var(--text-main);
+}
+
+@media (max-width: 900px) {
+  .journey-head {
+    display: block;
+  }
+
+  .journey-intro {
+    max-width: 100%;
+    margin-top: 1rem;
+    text-align: left;
+  }
+
+  .journey-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .journey {
+    padding-inline: 1.15rem;
+  }
+
+  .journey-card-top {
+    font-size: 0.58rem;
+    letter-spacing: 1px;
+  }
+
+  .journey-card h4 {
+    font-size: 1.55rem;
+  }
+}
+
+/* Show the full project preview instead of cropping the UI at the modal edges. */
+.work-item.expanded .project-hero-image-wrap img {
+  height: auto !important;
+  max-height: min(70vh, 640px);
+  object-fit: contain;
+}
+
+/* Keep expanded project previews in full colour. */
+.work-item.expanded .project-hero-image-wrap img {
+  filter: grayscale(0%);
 }

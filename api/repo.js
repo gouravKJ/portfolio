@@ -18,7 +18,7 @@ export default async function repoHandler(req, res) {
     return;
   }
 
-  // Parse repo name from query string e.g. ?name=Sanyaaroraaa/NOVA-AI
+  // Parse repo name from query string e.g. ?name=gouravKJ/DataforgeAI
   const urlParts = req.url.split('?');
   const searchParams = new URLSearchParams(urlParts[1] || '');
   const repoName = searchParams.get('name');

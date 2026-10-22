@@ -11,7 +11,7 @@ export default async function githubHandler(req, res) {
   }
 
   const urlParams = new URLSearchParams((req.url || '').split('?')[1] || '');
-  const username = urlParams.get('user') || 'Sanyaaroraaa';
+  const username = urlParams.get('user') || 'gouravKJ';
 
   const token = process.env.GITHUB_TOKEN;
   if (token) {

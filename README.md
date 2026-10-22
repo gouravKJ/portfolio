@@ -1,8 +1,14 @@
-# Sanya Arora — Portfolio
+# Gourav Kumar Jaiswal — Portfolio
 
-Personal portfolio website for Sanya Arora, Software Engineer.
+Personal portfolio for Gourav Kumar Jaiswal, full-stack developer and AI/ML engineer.
 
 **Resume:** [resume.pdf](resume.pdf)
+
+## Featured Projects
+
+- **DataForge AI** — AI data intelligence platform (Next.js, Groq LLM, Prisma, provenance pipeline)
+- **AI Study Assistant** — RAG-based study workspace (LangChain, Groq LLM, FAISS, Streamlit)
+- **CollabCo** — Real-time collaborative code editor (MERN, Socket.IO, JWT)
 
 ## Tech Stack
 
@@ -16,6 +22,8 @@ Personal portfolio website for Sanya Arora, Software Engineer.
 npm install
 npm run dev
 ```
+
+The site runs at http://localhost:3000. API routes are served by Vite middleware during development.
 
 ## Deploy
 

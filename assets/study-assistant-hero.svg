@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 600" width="1024" height="600" role="img" aria-label="AI Study Assistant workspace with document library, cited answer, quiz and flashcards">
+  <defs>
+    <linearGradient id="page" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EFECE3"/>
+      <stop offset="100%" stop-color="#E2DED2"/>
+    </linearGradient>
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#B7EFDF"/>
+      <stop offset="100%" stop-color="#8FE0C9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#1A2B25" flood-opacity="0.14"/>
+    </filter>
+    <clipPath id="appClip"><rect x="24" y="24" width="976" height="552" rx="16"/></clipPath>
+  </defs>
+
+  <rect width="1024" height="600" fill="url(#page)"/>
+  <rect x="26" y="26" width="972" height="548" rx="15" fill="none" stroke="#141414" stroke-opacity="0.06"/>
+
+  <g filter="url(#shadow)">
+    <rect x="24" y="24" width="976" height="552" rx="16" fill="#FBF9F4"/>
+  </g>
+
+  <g clip-path="url(#appClip)">
+    <!-- top bar -->
+    <rect x="24" y="24" width="976" height="58" fill="#FBF9F4"/>
+    <line x1="24" y1="82" x2="1000" y2="82" stroke="#141414" stroke-opacity="0.1"/>
+
+    <rect x="42" y="39" width="28" height="28" rx="8" fill="#141414"/>
+    <path d="M56 46 L58.6 52.4 L65 55 L58.6 57.6 L56 64 L53.4 57.6 L47 55 L53.4 52.4 Z" fill="#9BE7D2"/>
+    <text x="80" y="52" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#141414">AI Study Assistant</text>
+    <text x="80" y="67" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#6C6A61">Multi-document RAG workspace</text>
+
+    <g font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#5C5A52">
+      <text x="360" y="55">Study</text>
+      <text x="418" y="55">Documents</text>
+      <text x="492" y="55">Quizzes</text>
+      <text x="550" y="55">Flashcards</text>
+    </g>
+    <rect x="360" y="63" width="30" height="2.5" rx="1.2" fill="#141414"/>
+
+    <rect x="760" y="40" width="137" height="26" rx="13" fill="#E5F6EF" stroke="#9BE7D2"/>
+    <circle cx="775" cy="53" r="4" fill="#23A47B"/>
+    <text x="785" y="57" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="600" fill="#18735A">4 docs · 128 chunks</text>
+
+    <circle cx="930" cy="53" r="15" fill="#141414"/>
+    <text x="930" y="58" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#FBF9F4">GK</text>
+    <circle cx="947" cy="66" r="4" fill="#23A47B" stroke="#FBF9F4" stroke-width="2"/>
+
+    <!-- left sidebar -->
+    <rect x="24" y="82" width="226" height="494" fill="#F4F1E8"/>
+    <line x1="250" y1="82" x2="250" y2="576" stroke="#141414" stroke-opacity="0.08"/>
+
+    <text x="44" y="112" font-family="monospace" font-size="9.5" font-weight="700" letter-spacing="1.4" fill="#7A776D">DOCUMENTS</text>
+    <rect x="44" y="122" width="186" height="34" rx="8" fill="#FBF9F4" stroke="#141414" stroke-opacity="0.12"/>
+    <text x="56" y="144" font-family="monospace" font-size="10.5" fill="#3B3A35">⌕  Search library</text>
+
+    <g font-family="'Segoe UI', Arial, sans-serif">
+      <g>
+        <rect x="40" y="170" width="194" height="46" rx="9" fill="#E7F5EF"/>
+        <rect x="48" y="179" width="22" height="28" rx="3" fill="#FBF9F4" stroke="#23A47B" stroke-opacity="0.45"/>
+        <text x="55" y="197" font-family="monospace" font-size="8" font-weight="700" fill="#23A47B">PDF</text>
+        <text x="80" y="189" font-size="11" font-weight="600" fill="#23221E">Unit 3 — Transformers.pdf</text>
+        <text x="80" y="204" font-size="9.5" fill="#6C6A61">42 chunks · indexed</text>
+      </g>
+      <g>
+        <rect x="40" y="224" width="194" height="46" rx="9" fill="#FBF9F4" stroke="#141414" stroke-opacity="0.06"/>
+        <rect x="48" y="233" width="22" height="28" rx="3" fill="#FBF9F4" stroke="#141414" stroke-opacity="0.2"/>
+        <text x="55" y="251" font-family="monospace" font-size="8" font-weight="700" fill="#6C6A61">PDF</text>
+        <text x="80" y="243" font-size="11" font-weight="600" fill="#23221E">Attention Is All You Need.pdf</text>
+        <text x="80" y="258" font-size="9.5" fill="#6C6A61">36 chunks · indexed</text>
+      </g>
+      <g>
+        <rect x="40" y="278" width="194" height="46" rx="9" fill="#FBF9F4" stroke="#141414" stroke-opacity="0.06"/>
+        <rect x="48" y="287" width="22" height="28" rx="3" fill="#FBF9F4" stroke="#141414" stroke-opacity="0.2"/>
+        <text x="55" y="305" font-family="monospace" font-size="8" font-weight="700" fill="#6C6A61">PDF</text>
+        <text x="80" y="297" font-size="11" font-weight="600" fill="#23221E">Unit 4 — Model Training.pdf</text>
+        <text x="80" y="312" font-size="9.5" fill="#6C6A61">31 chunks · indexed</text>
+      </g>
+      <g>
+        <rect x="40" y="332" width="194" height="46" rx="9" fill="#FBF9F4" stroke="#141414" stroke-opacity="0.06"/>
+        <rect x="48" y="341" width="22" height="28" rx="3" fill="#FBF9F4" stroke="#141414" stroke-opacity="0.2"/>
+        <text x="55" y="359" font-family="monospace" font-size="8" font-weight="700" fill="#6C6A61">PDF</text>
+        <text x="80" y="351" font-size="11" font-weight="600" fill="#23221E">Deep Learning Notes.pdf</text>
+        <text x="80" y="366" font-size="9.5" fill="#6C6A61">19 chunks · indexed</text>
+      </g>
+    </g>
+
+    <rect x="40" y="404" width="194" height="1" fill="#141414" opacity="0.08"/>
+    <text x="44" y="430" font-family="monospace" font-size="9.5" font-weight="700" letter-spacing="1.4" fill="#7A776D">PIPELINE</text>
+    <g font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#3B3A35">
+      <circle cx="49" cy="450" r="3" fill="#23A47B"/><text x="60" y="453">LangChain loader</text>
+      <circle cx="49" cy="472" r="3" fill="#23A47B"/><text x="60" y="475">FAISS · 768d vectors</text>
+      <circle cx="49" cy="494" r="3" fill="#7C5CFF"/><text x="60" y="497">Groq · Llama 3.1</text>
+    </g>
+
+    <rect x="40" y="520" width="194" height="42" rx="9" fill="#141414"/>
+    <text x="56" y="539" font-family="monospace" font-size="9" fill="#9BE7D2">RAG STATUS</text>
+    <text x="56" y="553" font-family="'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="600" fill="#FBF9F4">✓ Retrieval online</text>
+    <circle cx="216" cy="541" r="4" fill="#9BE7D2"/>
+
+    <!-- main chat -->
+    <rect x="250" y="82" width="478" height="494" fill="#FBF9F4"/>
+    <text x="274" y="115" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#141414">Ask across 4 documents</text>
+    <text x="274" y="132" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#77746B">Answers are grounded in your PDFs and cite the page.</text>
+
+    <g>
+      <rect x="274" y="150" width="424" height="52" rx="12" fill="#141414"/>
+      <text x="290" y="172" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#FBF9F4">Explain transformers from Unit 3 and quiz me on attention.</text>
+      <text x="290" y="189" font-family="monospace" font-size="9" fill="#9BE7D2">you · just now</text>
+    </g>
+
+    <rect x="274" y="216" width="424" height="202" rx="12" fill="#F4F1E8" stroke="#141414" stroke-opacity="0.06"/>
+    <rect x="274" y="216" width="4" height="202" rx="2" fill="#23A47B"/>
+    <text x="292" y="238" font-family="monospace" font-size="9" font-weight="700" letter-spacing="1.2" fill="#18735A">STUDY ASSISTANT · ANSWER</text>
+
+    <g font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#38372F">
+      <text x="292" y="260">A transformer maps a sequence to a sequence without recurrence. Each</text>
+      <text x="292" y="276">token is embedded, given positional information, then refined by stacked</text>
+      <text x="292" y="292">self-attention and feed-forward blocks. Multi-head attention lets every</text>
+      <text x="292" y="308">token weigh every other token in parallel, which is why the model can</text>
+      <text x="292" y="324">capture long-range dependencies far better than an RNN.</text>
+    </g>
+
+    <g font-family="monospace" font-size="8.5">
+      <rect x="292" y="338" width="104" height="20" rx="10" fill="#E1F4EC" stroke="#9BE7D2"/>
+      <text x="301" y="351" fill="#18735A">Unit 3 · p.12</text>
+      <rect x="404" y="338" width="128" height="20" rx="10" fill="#E1F4EC" stroke="#9BE7D2"/>
+      <text x="413" y="351" fill="#18735A">Attention paper · p.4</text>
+    </g>
+
+    <line x1="292" y1="374" x2="680" y2="374" stroke="#141414" stroke-opacity="0.09"/>
+    <text x="292" y="394" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#6C6A61">Retrieved 4 chunks from 2 sources · 1.2s · Groq Llama 3.1 8B</text>
+
+    <!-- follow-up input -->
+    <rect x="274" y="434" width="424" height="44" rx="11" fill="#FBF9F4" stroke="#141414" stroke-opacity="0.16"/>
+    <text x="290" y="461" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#9A978D">Ask a follow-up…</text>
+    <rect x="638" y="444" width="48" height="24" rx="7" fill="#141414"/>
+    <text x="662" y="460" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9.5" font-weight="600" fill="#FBF9F4">Send</text>
+
+    <g font-family="monospace" font-size="9" fill="#77746B">
+      <text x="274" y="506">QUICK ACTIONS</text>
+      <rect x="274" y="516" width="104" height="26" rx="7" fill="#F4F1E8" stroke="#141414" stroke-opacity="0.1"/>
+      <text x="288" y="533" fill="#3B3A35">Summarize</text>
+      <rect x="386" y="516" width="112" height="26" rx="7" fill="#F4F1E8" stroke="#141414" stroke-opacity="0.1"/>
+      <text x="400" y="533" fill="#3B3A35">Generate quiz</text>
+      <rect x="506" y="516" width="112" height="26" rx="7" fill="#F4F1E8" stroke="#141414" stroke-opacity="0.1"/>
+      <text x="520" y="533" fill="#3B3A35">Flashcards</text>
+    </g>
+
+    <!-- right rail -->
+    <rect x="728" y="82" width="272" height="494" fill="#F4F1E8"/>
+    <line x1="728" y1="82" x2="728" y2="576" stroke="#141414" stroke-opacity="0.08"/>
+
+    <text x="748" y="112" font-family="monospace" font-size="9.5" font-weight="700" letter-spacing="1.4" fill="#7A776D">GENERATED IN-SESSION</text>
+
+    <rect x="746" y="126" width="236" height="160" rx="12" fill="#FBF9F4" stroke="#141414" stroke-opacity="0.08"/>
+    <rect x="758" y="138" width="64" height="18" rx="9" fill="#EEE9FE"/>
+    <text x="768" y="151" font-family="monospace" font-size="8" font-weight="700" fill="#6446D8">QUIZ · Q1</text>
+    <text x="758" y="176" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#23221E">Why is self-attention</text>
+    <text x="758" y="191" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#23221E">parallelizable?</text>
+    <g font-family="'Segoe UI', Arial, sans-serif" font-size="9.5" fill="#4A4942">
+      <rect x="758" y="202" width="212" height="23" rx="6" fill="#F4F1E8"/>
+      <text x="768" y="217">A. It loops over tokens sequentially</text>
+      <rect x="758" y="230" width="212" height="23" rx="6" fill="#E1F4EC" stroke="#23A47B"/>
+      <circle cx="769" cy="241" r="4" fill="#23A47B"/>
+      <text x="779" y="245">B. Tokens attend in parallel</text>
+      <rect x="758" y="258" width="212" height="23" rx="6" fill="#F4F1E8"/>
+      <text x="768" y="273">C. It removes positional encoding</text>
+    </g>
+
+    <rect x="746" y="298" width="236" height="154" rx="12" fill="#141414"/>
+    <text x="758" y="320" font-family="monospace" font-size="8.5" letter-spacing="1.2" fill="#9BE7D2">FLASHCARD 08 / 24</text>
+    <text x="758" y="346" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#FBF9F4">What does multi-head attention compute?</text>
+    <line x1="758" y1="362" x2="968" y2="362" stroke="#FBF9F4" stroke-opacity="0.15"/>
+    <g font-family="'Segoe UI', Arial, sans-serif" font-size="9.5" fill="#C9C7BE">
+      <text x="758" y="380">Several learned projections of Q, K, V run</text>
+      <text x="758" y="394">in parallel, then concatenate and project.</text>
+      <text x="758" y="408">Source: Unit 3 · p.14</text>
+    </g>
+    <rect x="758" y="420" width="90" height="22" rx="6" fill="#9BE7D2"/>
+    <text x="772" y="435" font-family="'Segoe UI', Arial, sans-serif" font-size="9.5" font-weight="700" fill="#123A2D">Next card →</text>
+
+    <rect x="746" y="466" width="236" height="94" rx="12" fill="#FBF9F4" stroke="#141414" stroke-opacity="0.08"/>
+    <text x="758" y="486" font-family="monospace" font-size="8.5" letter-spacing="1.2" fill="#7A776D">STUDY PULSE</text>
+    <text x="758" y="514" font-family="'Segoe UI', Arial, sans-serif" font-size="22" font-weight="700" fill="#141414">87%</text>
+    <text x="806" y="514" font-family="'Segoe UI', Arial, sans-serif" font-size="9.5" fill="#6C6A61">quiz accuracy</text>
+    <rect x="758" y="526" width="212" height="6" rx="3" fill="#E7E3D9"/>
+    <rect x="758" y="526" width="184" height="6" rx="3" fill="#23A47B"/>
+    <text x="758" y="551" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#77746B">12 cards due · 3 weak concepts</text>
+  </g>
+</svg>
